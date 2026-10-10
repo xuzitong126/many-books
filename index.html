@@ -1,1 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="OxrW4-yL7albKkFe6Q0DN08h5ygGyP41MHdvgIl3inY" />
+<title>免费书籍资源合集</title>
+<style>
+  :root{
+    --fg:#16181d;
+    --muted:#8b909a;
+    --faint:#c9ccd2;
+    --line:#eceef1;
+    --bg:#fff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+         "Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-feature-settings:"kern" 1;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px 120px}
+
+  header{padding:88px 0 40px}
+  h1{margin:0;font-size:26px;font-weight:600;letter-spacing:-.01em;line-height:1.4}
+  .notice{margin:14px 0 0;color:var(--muted);font-size:13px}
+
+  /* 目录 */
+  nav{margin:26px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:13px}
+  nav a{color:var(--muted);text-decoration:none;padding:2px 0;
+        border-bottom:1px solid transparent}
+  nav a:hover{color:var(--fg);border-bottom-color:var(--line)}
+
+  /* 搜索 */
+  .bar{
+    position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:14px 0 12px;border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:14px;
+  }
+  input{
+    flex:1;min-width:0;font:inherit;font-size:14px;color:var(--fg);
+    background:transparent;border:0;outline:0;padding:6px 0;
+  }
+  input::placeholder{color:var(--faint)}
+  .count{color:var(--muted);font-size:12px;white-space:nowrap;
+         font-variant-numeric:tabular-nums}
+
+  section{padding-top:52px}
+  h2{
+    margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.14em;
+    color:var(--muted);text-transform:uppercase;
+    display:flex;align-items:center;gap:10px;
+  }
+  h2 .n{font-weight:400;letter-spacing:0;color:var(--faint);
+        font-variant-numeric:tabular-nums}
+  ul{list-style:none;margin:0;padding:0}
+  li{border-bottom:1px solid var(--line)}
+  li:last-child{border-bottom:0}
+  li a{
+    display:block;padding:11px 0;color:var(--fg);text-decoration:none;
+    font-size:15px;line-height:1.6;transition:opacity .12s ease;
+  }
+  li a:hover{opacity:.5}
+  li a::after{content:"↗";font-size:11px;color:var(--faint);margin-left:8px;
+              display:inline-block;vertical-align:1px}
+
+  .empty{display:none;color:var(--muted);font-size:14px;padding:40px 0}
+  body.filtering section{display:none}
+  body.filtering section.hit{display:block;padding-top:36px}
+  body.filtering nav{display:none}
+  body.none .empty{display:block}
+  body.none section{display:none}
+
+  footer{margin-top:80px;padding-top:20px;border-top:1px solid var(--line);
+         color:var(--faint);font-size:12px}
+
+  @media (max-width:560px){
+    .wrap{padding:0 18px 80px}
+    header{padding:56px 0 28px}
+    h1{font-size:22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>免费书籍资源合集</h1>
+    <p class="notice">如有侵权，请联系删除！</p>
+    <nav>
+      <a href="#s0">Java</a>
+      <a href="#s1">JavaScript</a>
+      <a href="#s2">Node.js</a>
+      <a href="#s3">C</a>
+      <a href="#s4">C++</a>
+      <a href="#s5">Golang</a>
+      <a href="#s6">Python</a>
+      <a href="#s7">Computer system</a>
+      <a href="#s8">Linux / Unix</a>
+      <a href="#s9">TCP</a>
+      <a href="#s10">HTTP</a>
+      <a href="#s11">Clean code</a>
+      <a href="#s12">Design pattern</a>
+      <a href="#s13">Algorithms</a>
+      <a href="#s14">System</a>
+      <a href="#s15">Microservice</a>
+      <a href="#s16">Test</a>
+      <a href="#s17">Git</a>
+      <a href="#s18">Docker</a>
+      <a href="#s19">MySQL</a>
+      <a href="#s20">MongoDB</a>
+      <a href="#s21">Redis</a>
+      <a href="#s22">Nginx</a>
+      <a href="#s23">Others</a>
+      <a href="#s24">更多资源</a>
+    </nav>
+  </header>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="搜索书名 / 资源…" autocomplete="off" spellcheck="false">
+    <span class="count" id="c">213 条</span>
+  </div>
+
+  <p class="empty">没有匹配的结果</p>
+
+    <section id="s0">
+      <h2>Java<span class="n">2</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/2d9e0a19952f" target="_blank" rel="noopener">《Effective Java 中文版（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/8fdc24e885af" target="_blank" rel="noopener">《Java编程思想（第4版）》</a></li>
+      </ul>
+    </section>
+    <section id="s1">
+      <h2>JavaScript<span class="n">13</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/bdf34a7b8e43" target="_blank" rel="noopener">《你不知道的JavaScript（上卷）》</a></li>
+        <li><a href="https://pan.quark.cn/s/4b3569dd4289" target="_blank" rel="noopener">《你不知道的JavaScript（中卷）》</a></li>
+        <li><a href="https://pan.quark.cn/s/80cc65e0aba7" target="_blank" rel="noopener">《你不知道的JavaScript（下卷）》</a></li>
+        <li><a href="https://pan.quark.cn/s/737824188b08" target="_blank" rel="noopener">《JavaScript高级程序设计第三版》</a></li>
+        <li><a href="https://pan.quark.cn/s/8ee42b782d25" target="_blank" rel="noopener">《JavaScript权威指南(第6版)》</a></li>
+        <li><a href="https://pan.quark.cn/s/9a4f06b4658f" target="_blank" rel="noopener">《JavaScript语言精粹》</a></li>
+        <li><a href="https://pan.quark.cn/s/ea2a0a715731" target="_blank" rel="noopener">《JavaScript设计模式与开发实践》</a></li>
+        <li><a href="https://pan.quark.cn/s/ea89e25ddfa6" target="_blank" rel="noopener">《JavaScript函数式编程》</a></li>
+        <li><a href="https://pan.quark.cn/s/cc778a5089e6" target="_blank" rel="noopener">《JavaScript面向对象编程》</a></li>
+        <li><a href="https://pan.quark.cn/s/8a47dd6f1e7d" target="_blank" rel="noopener">《JavaScript设计模式》</a></li>
+        <li><a href="https://pan.quark.cn/s/0a90a5703c24" target="_blank" rel="noopener">《精通JavaScript》</a></li>
+        <li><a href="https://pan.quark.cn/s/ef81a48aa4de" target="_blank" rel="noopener">《JavaScript DOM编程艺术》</a></li>
+        <li><a href="https://pan.quark.cn/s/6b8a867818f5" target="_blank" rel="noopener">《基于MVC的JavaScript Web富应用开发》</a></li>
+      </ul>
+    </section>
+    <section id="s2">
+      <h2>Node.js<span class="n">7</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/27507f55f327" target="_blank" rel="noopener">《深入浅出node.js》</a></li>
+        <li><a href="https://pan.quark.cn/s/3c214ddd6920" target="_blank" rel="noopener">《Node.js实战》</a></li>
+        <li><a href="https://pan.quark.cn/s/f7606add404a" target="_blank" rel="noopener">《Node学习指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/5d776584d7dd" target="_blank" rel="noopener">《Node与Express开发》</a></li>
+        <li><a href="https://pan.quark.cn/s/c4f47ce70d73" target="_blank" rel="noopener">《Node.js开发指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/94959f5bee3a" target="_blank" rel="noopener">《了不起的Node.js》</a></li>
+        <li><a href="https://pan.quark.cn/s/f7773f4db768" target="_blank" rel="noopener">《Node即学即用》</a></li>
+      </ul>
+    </section>
+    <section id="s3">
+      <h2>C<span class="n">4</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/072358024420" target="_blank" rel="noopener">《C程序设计语言（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/633b6935cff3" target="_blank" rel="noopener">《C专家编程》</a></li>
+        <li><a href="https://pan.quark.cn/s/3b45a2895329" target="_blank" rel="noopener">《C语言接口与实现》</a></li>
+        <li><a href="https://pan.quark.cn/s/3673174210cc" target="_blank" rel="noopener">《C陷阱与缺陷》</a></li>
+      </ul>
+    </section>
+    <section id="s4">
+      <h2>C++<span class="n">2</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/294ba4c004d9" target="_blank" rel="noopener">《C++ Primer Plus（第5版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/68d26be13863" target="_blank" rel="noopener">《C++编程思想（第1卷）》</a></li>
+      </ul>
+    </section>
+    <section id="s5">
+      <h2>Golang<span class="n">5</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/11103bc3f249" target="_blank" rel="noopener">《Go学习笔记（第4版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/e1d96caa1484" target="_blank" rel="noopener">《Go学习笔记（第6版下卷）》</a></li>
+        <li><a href="https://pan.quark.cn/s/83f7b5cc62af" target="_blank" rel="noopener">《Go源码剖析》</a></li>
+        <li><a href="https://pan.quark.cn/s/bca7f1264b68" target="_blank" rel="noopener">《Go程序设计语言》</a></li>
+        <li><a href="https://pan.quark.cn/s/abe73f0c3b37" target="_blank" rel="noopener">《Go语言实战》</a></li>
+      </ul>
+    </section>
+    <section id="s6">
+      <h2>Python<span class="n">5</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/5f4cebf45490" target="_blank" rel="noopener">《Python基础教程（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/d107fb58aca4" target="_blank" rel="noopener">《Python编程：从入门到实践》</a></li>
+        <li><a href="https://pan.quark.cn/s/8bd52b5e6073" target="_blank" rel="noopener">《Python核心编程（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/036ac89404a9" target="_blank" rel="noopener">《Python Cookbook（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/0bfbc6490d2f" target="_blank" rel="noopener">《Python源码剖析》</a></li>
+      </ul>
+    </section>
+    <section id="s7">
+      <h2>Computer system<span class="n">6</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/7e44f7931d15" target="_blank" rel="noopener">《深入理解计算机系统》</a></li>
+        <li><a href="https://pan.quark.cn/s/293d0145002c" target="_blank" rel="noopener">《现代操作系统（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/456d6d22ed4a" target="_blank" rel="noopener">《编码：隐匿在计算机软硬件背后的语言》</a></li>
+        <li><a href="https://pan.quark.cn/s/3d70d7255455" target="_blank" rel="noopener">《计算机程序的构造和解释（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/098bdcdd638a" target="_blank" rel="noopener">《计算的本质：深入剖析程序和计算机》</a></li>
+        <li><a href="https://pan.quark.cn/s/2517761ce2a1" target="_blank" rel="noopener">《编译原理（第2版）》</a></li>
+      </ul>
+    </section>
+    <section id="s8">
+      <h2>Linux / Unix<span class="n">9</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/fbf73f66df45" target="_blank" rel="noopener">《UNIX编程艺术》</a></li>
+        <li><a href="https://pan.quark.cn/s/80154b5b4e18" target="_blank" rel="noopener">《UNIX环境高级编程（第三版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/4a9ed761788e" target="_blank" rel="noopener">《UNIX网络编程卷1：套接字API》</a></li>
+        <li><a href="https://pan.quark.cn/s/a7f25bce9382" target="_blank" rel="noopener">《UNIX网络编程卷2：进程间通信》</a></li>
+        <li><a href="https://pan.quark.cn/s/49d7ccb47fab" target="_blank" rel="noopener">《UNIX操作系统设计》</a></li>
+        <li><a href="https://pan.quark.cn/s/2d441964f556" target="_blank" rel="noopener">《Linux内核设计与实现（第三版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/9d649907105c" target="_blank" rel="noopener">《深入Linux内核架构》</a></li>
+        <li><a href="https://pan.quark.cn/s/82364c86c7bb" target="_blank" rel="noopener">《深入理解linux内核（第三版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/a63e148fd6e3" target="_blank" rel="noopener">《跟我一起写makefile》</a></li>
+      </ul>
+    </section>
+    <section id="s9">
+      <h2>TCP<span class="n">3</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/5f770fd33316" target="_blank" rel="noopener">《TCP/IP详解 卷1：协议》</a></li>
+        <li><a href="https://pan.quark.cn/s/f8f0203e5191" target="_blank" rel="noopener">《TCP/IP详解 卷2：实现》</a></li>
+        <li><a href="https://pan.quark.cn/s/945ea863c10b" target="_blank" rel="noopener">《TCP/IP详解 卷3：TCP事务协议，HTTP，NNTP和UNIX域协议》</a></li>
+      </ul>
+    </section>
+    <section id="s10">
+      <h2>HTTP<span class="n">3</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/8e162d581ddd" target="_blank" rel="noopener">《HTTP权威指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/e10a866c0877" target="_blank" rel="noopener">《Web性能权威指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/8c0218ab23c4" target="_blank" rel="noopener">《图解HTTP》</a></li>
+      </ul>
+    </section>
+    <section id="s11">
+      <h2>Clean code<span class="n">8</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/6c2dd44d426d" target="_blank" rel="noopener">《代码整洁之道》</a></li>
+        <li><a href="https://pan.quark.cn/s/7771fef13d8f" target="_blank" rel="noopener">《代码大全》</a></li>
+        <li><a href="https://pan.quark.cn/s/9f52594c8ace" target="_blank" rel="noopener">《编写可读代码的艺术》</a></li>
+        <li><a href="https://pan.quark.cn/s/692d1398c9bf" target="_blank" rel="noopener">《修改代码的艺术》</a></li>
+        <li><a href="https://pan.quark.cn/s/c509f8e6f46d" target="_blank" rel="noopener">《重构：改善既有代码的设计》</a></li>
+        <li><a href="https://pan.quark.cn/s/d60919698d23" target="_blank" rel="noopener">《程序设计方法》</a></li>
+        <li><a href="https://pan.quark.cn/s/806f957a3660" target="_blank" rel="noopener">《程序设计实践》</a></li>
+        <li><a href="https://pan.quark.cn/s/c0613b9ad9e7" target="_blank" rel="noopener">《领域驱动设计：软件核心复杂性应对之道》</a></li>
+      </ul>
+    </section>
+    <section id="s12">
+      <h2>Design pattern<span class="n">3</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/67d506848516" target="_blank" rel="noopener">《Head First 设计模式》</a></li>
+        <li><a href="https://pan.quark.cn/s/2278d9079889" target="_blank" rel="noopener">《设计模式：可复用面向对象软件的基础》</a></li>
+        <li><a href="https://pan.quark.cn/s/442b8707f3e9" target="_blank" rel="noopener">《设计模式之禅》</a></li>
+      </ul>
+    </section>
+    <section id="s13">
+      <h2>Algorithms<span class="n">9</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/9d96969c3640" target="_blank" rel="noopener">《算法（第4版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/ca9b34aa1f88" target="_blank" rel="noopener">《算法导论（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/eccf3978aa6b" target="_blank" rel="noopener">《算法设计与分析（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/6042da7eca37" target="_blank" rel="noopener">《算法心得：高效算法的奥秘（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/022b468125b1" target="_blank" rel="noopener">《数据结构与算法分析：C语言描述（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/ac76e030b398" target="_blank" rel="noopener">《数据结构与算法分析：Java描述》</a></li>
+        <li><a href="https://pan.quark.cn/s/1db549ea01e5" target="_blank" rel="noopener">《编程珠玑（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/b26fa4a35a02" target="_blank" rel="noopener">《编程之美：微软技术面试心得》</a></li>
+        <li><a href="https://pan.quark.cn/s/9eb934d338be" target="_blank" rel="noopener">《剑指offer名企面试官精讲典型编程题》</a></li>
+      </ul>
+    </section>
+    <section id="s14">
+      <h2>System<span class="n">4</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/4010d575670d" target="_blank" rel="noopener">《高性能网站建设指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/26f0e3ef11f8" target="_blank" rel="noopener">《大型网站技术架构：核心原理与案例分析》</a></li>
+        <li><a href="https://pan.quark.cn/s/8e31e9d16525" target="_blank" rel="noopener">《企业应用架构模式》</a></li>
+        <li><a href="https://pan.quark.cn/s/5e38013d64ca" target="_blank" rel="noopener">《企业集成模式：设计、构建及部署消息传递解决方案》</a></li>
+      </ul>
+    </section>
+    <section id="s15">
+      <h2>Microservice<span class="n">1</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/b54fda23fd16" target="_blank" rel="noopener">《微服务设计》</a></li>
+      </ul>
+    </section>
+    <section id="s16">
+      <h2>Test<span class="n">1</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/10410abb2a91" target="_blank" rel="noopener">《测试驱动开发》</a></li>
+      </ul>
+    </section>
+    <section id="s17">
+      <h2>Git<span class="n">2</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/b8c322602b8e" target="_blank" rel="noopener">《Pro Git中文版》</a></li>
+        <li><a href="https://pan.quark.cn/s/32d9e5abe118" target="_blank" rel="noopener">《GitHub入门与实践》</a></li>
+      </ul>
+    </section>
+    <section id="s18">
+      <h2>Docker<span class="n">2</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/a056708ac0b2" target="_blank" rel="noopener">《Docker从入门到实践（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/79e2f09cfae2" target="_blank" rel="noopener">《Docker容器与容器云（第2版）》</a></li>
+      </ul>
+    </section>
+    <section id="s19">
+      <h2>MySQL<span class="n">6</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/631c6d81c29b" target="_blank" rel="noopener">《高性能MySQL（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/9254e878af92" target="_blank" rel="noopener">《MySQL性能调优与架构设计》</a></li>
+        <li><a href="https://pan.quark.cn/s/a45f241d7d93" target="_blank" rel="noopener">《MySQL技术内幕：InnoDB存储引擎》</a></li>
+        <li><a href="https://pan.quark.cn/s/37699c8ead5c" target="_blank" rel="noopener">《SQL基础教程（第3版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/9c9f86c87f41" target="_blank" rel="noopener">《MySQL必知必会》</a></li>
+        <li><a href="https://pan.quark.cn/s/59319034d82d" target="_blank" rel="noopener">《SQL学习指南》</a></li>
+      </ul>
+    </section>
+    <section id="s20">
+      <h2>MongoDB<span class="n">3</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/6f6f1e8dae25" target="_blank" rel="noopener">《MongoDB实战》</a></li>
+        <li><a href="https://pan.quark.cn/s/2bf86ce18b39" target="_blank" rel="noopener">《MongoDB权威指南》</a></li>
+        <li><a href="https://pan.quark.cn/s/d462a47847ef" target="_blank" rel="noopener">《深入学习MongoDB》</a></li>
+      </ul>
+    </section>
+    <section id="s21">
+      <h2>Redis<span class="n">4</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/9c770081542b" target="_blank" rel="noopener">《Redis入门指南（第2版）》</a></li>
+        <li><a href="https://pan.quark.cn/s/1ec7a93921ea" target="_blank" rel="noopener">《Redis实战》</a></li>
+        <li><a href="https://pan.quark.cn/s/aa8060b992fb" target="_blank" rel="noopener">《Redis设计与实现》</a></li>
+        <li><a href="https://pan.quark.cn/s/7b482871cd20" target="_blank" rel="noopener">《Redis开发与运维》</a></li>
+      </ul>
+    </section>
+    <section id="s22">
+      <h2>Nginx<span class="n">1</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/e5a03b304ab6" target="_blank" rel="noopener">《深入理解Nginx：模块开发与架构解析（第2版）》</a></li>
+      </ul>
+    </section>
+    <section id="s23">
+      <h2>Others<span class="n">7</span></h2>
+      <ul>
+        <li><a href="https://pan.quark.cn/s/956aeb9a1a98" target="_blank" rel="noopener">《如何阅读一本书》</a></li>
+        <li><a href="https://pan.quark.cn/s/06df9e1e1252" target="_blank" rel="noopener">《七周七语言：理解多种编程范型》</a></li>
+        <li><a href="https://pan.quark.cn/s/307b68b10fc7" target="_blank" rel="noopener">《程序员修炼之道：从小工到专家》</a></li>
+        <li><a href="https://pan.quark.cn/s/d02f58ac811b" target="_blank" rel="noopener">《程序员的职业素养》</a></li>
+        <li><a href="https://pan.quark.cn/s/36efbd108c68" target="_blank" rel="noopener">《程序员的自我修养：链接、装载与库》</a></li>
+        <li><a href="https://pan.quark.cn/s/b9dfe54279e6" target="_blank" rel="noopener">《高效程序员的45个习惯》</a></li>
+        <li><a href="https://pan.quark.cn/s/af902d194e4b" target="_blank" rel="noopener">言情、玄幻仙侠、悬疑推理、都市、历史权谋、末世科幻、纯爱等各平台热门小说100部</a></li>
+      </ul>
+    </section>
+    <section id="s24">
+      <h2>更多资源<span class="n">103</span></h2>
+      <ul>
+        <li><a href="https://s.panlay.com/4LFjMN" target="_blank" rel="noopener">形式与政策 pdf版 时事报告大学生版</a></li>
+        <li><a href="https://s.panlay.com/FyBRiZ" target="_blank" rel="noopener">少年新知.非纸质pdf版 2023、2024、2025年</a></li>
+        <li><a href="https://pan.quark.cn/s/b0ba71625584" target="_blank" rel="noopener">时文阅读 电子版快捷英语31期2027新版3-9年级PDF</a></li>
+        <li><a href="https://s.panlay.com/5UulgW" target="_blank" rel="noopener">【2026专八已更新】英语专四专八 1996-2025全套真</a></li>
+        <li><a href="https://s.panlay.com/tV50JH" target="_blank" rel="noopener">5万款手抄报电子模板</a></li>
+        <li><a href="https://s.panlay.com/5tJz7D" target="_blank" rel="noopener">医学个案护理PPT模板112套</a></li>
+        <li><a href="https://s.panlay.com/T5ne0A" target="_blank" rel="noopener">Excel9000套模板可编辑</a></li>
+        <li><a href="https://s.panlay.com/AVQjzL" target="_blank" rel="noopener">10000首乐队总谱 简谱功能谱跑场谱级数谱功能谱键</a></li>
+        <li><a href="https://s.panlay.com/rnOcTO" target="_blank" rel="noopener">【1960年-2026年《故事会》合集、全集】PDF电子版</a></li>
+        <li><a href="https://s.panlay.com/byqlmN" target="_blank" rel="noopener">【PDF版】1983版高中数学甲种本</a></li>
+        <li><a href="https://s.panlay.com/aIU7Cr" target="_blank" rel="noopener">开学第一周｜一年级新生常规训练手册 班会家长会家长群话术汇总</a></li>
+        <li><a href="https://s.panlay.com/bAlwD5" target="_blank" rel="noopener">剪映高级感封面字幕预设</a></li>
+        <li><a href="https://s.panlay.com/LZu0pN" target="_blank" rel="noopener">拼豆图纸生成Skill，照片一键转拼豆图纸</a></li>
+        <li><a href="https://s.panlay.com/ct7qDr" target="_blank" rel="noopener">1981年-2025年《读者》系列杂志电子版</a></li>
+        <li><a href="https://s.panlay.com/SmIjj2" target="_blank" rel="noopener">大语文知识画报 2025年PDF版（不全）</a></li>
+        <li><a href="https://s.panlay.com/sfNHrI" target="_blank" rel="noopener">2026秋五星学霸小学一二三四五年级上册</a></li>
+        <li><a href="https://s.panlay.com/wYLFvq" target="_blank" rel="noopener">钢琴 拜厄/车尔尼/哈农/599/299pdf电子版经典钢</a></li>
+        <li><a href="https://s.panlay.com/VTEjM0" target="_blank" rel="noopener">【入门级流行钢琴曲谱】</a></li>
+        <li><a href="https://s.panlay.com/DL269S" target="_blank" rel="noopener">撕纸风新人入职PPT模板</a></li>
+        <li><a href="https://s.panlay.com/3Onwfd" target="_blank" rel="noopener">4K动态静态设计素材自动发货</a></li>
+        <li><a href="https://s.panlay.com/zgs6Ei" target="_blank" rel="noopener">2026高中语文必背古诗文资料合集｜PDF电子版</a></li>
+        <li><a href="https://s.panlay.com/dmWWMb" target="_blank" rel="noopener">剪映900+模板设计素材</a></li>
+        <li><a href="https://s.panlay.com/zEhvHs" target="_blank" rel="noopener">全国小初高各版全课本合集,包含必修、选修等电子资料</a></li>
+        <li><a href="https://s.panlay.com/AuhM6x" target="_blank" rel="noopener">助眠轻音乐纯音乐背景音乐经典合集音频</a></li>
+        <li><a href="https://s.panlay.com/99E2Vm" target="_blank" rel="noopener">小升初[语+数+英]视频精讲总复习最全资料包</a></li>
+        <li><a href="https://s.panlay.com/rxU1Gz" target="_blank" rel="noopener">1990-2026.6月大学英语六级真题+解析+复习资料</a></li>
+        <li><a href="https://s.panlay.com/zwZqdi" target="_blank" rel="noopener">2026最新驾考科目一口诀驾考科目一二三四学习资料</a></li>
+        <li><a href="https://s.panlay.com/SxWRPe" target="_blank" rel="noopener">2025秋新人教版英语八年级上册课件PPT教案资料包</a></li>
+        <li><a href="https://s.panlay.com/E5484s" target="_blank" rel="noopener">高中语文文言文实词虚词汇总 新高考文言文知识点大全 复习资料</a></li>
+        <li><a href="https://s.panlay.com/tY6EXH" target="_blank" rel="noopener">2026版初中《初中必刷题》7-9年级PDF版</a></li>
+        <li><a href="https://s.panlay.com/X5ILOy" target="_blank" rel="noopener">国内一线影视导演团队内部Skill</a></li>
+        <li><a href="https://s.panlay.com/6oXQp6" target="_blank" rel="noopener">2024全国1-5级标准河流水系shp矢量数据</a></li>
+        <li><a href="https://s.panlay.com/IPkLOp" target="_blank" rel="noopener">吉他零基础视频教程全套</a></li>
+        <li><a href="https://s.panlay.com/lMyI1i" target="_blank" rel="noopener">合伙人协议书范本投资开店办厂经营公司股东股权入股合作合同模板</a></li>
+        <li><a href="https://s.panlay.com/pOR80w" target="_blank" rel="noopener">人教版初中物理初二三教案讲义专项练习八九年级电子版资料</a></li>
+        <li><a href="https://s.panlay.com/GKNyXb" target="_blank" rel="noopener">2025版必刷题初中同步训练试题卷PDF七八九年级|</a></li>
+        <li><a href="https://s.panlay.com/xRJpcL" target="_blank" rel="noopener">48个英语音标对应字母表10页PDF</a></li>
+        <li><a href="https://s.panlay.com/L356pP" target="_blank" rel="noopener">新人教版初中化学九年级全册知识点</a></li>
+        <li><a href="https://s.panlay.com/UKUKdo" target="_blank" rel="noopener">初中数学26个经典专项练习题</a></li>
+        <li><a href="https://s.panlay.com/lFKUMD" target="_blank" rel="noopener">Cubase修音与效果教程</a></li>
+        <li><a href="https://s.panlay.com/c0K8cy" target="_blank" rel="noopener">MATLAB 经典教程</a></li>
+        <li><a href="https://s.panlay.com/RYg6kL" target="_blank" rel="noopener">儿童涂色填色模板大全</a></li>
+        <li><a href="https://s.panlay.com/2Y5nIW" target="_blank" rel="noopener">水电工施工教程电工视频教程</a></li>
+        <li><a href="https://s.panlay.com/bVAAua" target="_blank" rel="noopener">麻将视频教程</a></li>
+        <li><a href="https://s.panlay.com/zgs6Ei" target="_blank" rel="noopener">高考英语核心词表资料包</a></li>
+        <li><a href="https://s.panlay.com/70PLzw" target="_blank" rel="noopener">Procreate古风字体设计素材</a></li>
+        <li><a href="https://s.panlay.com/V27s08" target="_blank" rel="noopener">1000套电子字帖PDF格式</a></li>
+        <li><a href="https://s.panlay.com/PSLTYM" target="_blank" rel="noopener">2026版离婚协议书电子版</a></li>
+        <li><a href="https://s.panlay.com/hAGmq3" target="_blank" rel="noopener">大学英语四六级真题合集</a></li>
+        <li><a href="https://s.panlay.com/P8rTlM" target="_blank" rel="noopener">小学语文数学英语道法思维导图</a></li>
+        <li><a href="https://s.panlay.com/MHiabz" target="_blank" rel="noopener">七年级上册语文一课一练默写单PDF</a></li>
+        <li><a href="https://s.panlay.com/jYjwNp" target="_blank" rel="noopener">熬夜啃完这69篇Simon范文，雅思写作8.0稳了</a></li>
+        <li><a href="https://s.panlay.com/TbE6S9" target="_blank" rel="noopener">婚庆素材模板可编辑</a></li>
+        <li><a href="https://s.panlay.com/VF7YfY" target="_blank" rel="noopener">高中语文必背120个文言实词</a></li>
+        <li><a href="https://s.panlay.com/QkR95n" target="_blank" rel="noopener">高中英语读后续写30个微场景练习</a></li>
+        <li><a href="https://s.panlay.com/uXFnVp" target="_blank" rel="noopener">即梦 Seedance 2.0 保姆级教程</a></li>
+        <li><a href="https://s.panlay.com/9QBcl2" target="_blank" rel="noopener">10以内加减法口算</a></li>
+        <li><a href="https://s.panlay.com/upFEep" target="_blank" rel="noopener">【备考26年12月】英语四六级真题及参考答案，赠作文模板</a></li>
+        <li><a href="https://s.panlay.com/JehIN0" target="_blank" rel="noopener">26年更新150+套Excel练习题库</a></li>
+        <li><a href="https://s.panlay.com/SljRzi" target="_blank" rel="noopener">安卓数据恢复教程</a></li>
+        <li><a href="https://s.panlay.com/HYORyA" target="_blank" rel="noopener">1000题刷透初中计算</a></li>
+        <li><a href="https://s.panlay.com/MEIrHs" target="_blank" rel="noopener">免费可商用中文字体包</a></li>
+        <li><a href="https://s.panlay.com/BkybYp" target="_blank" rel="noopener">框架构图教学设计素材</a></li>
+        <li><a href="https://s.panlay.com/U2X7aR" target="_blank" rel="noopener">新农村自建房CAD图纸合集</a></li>
+        <li><a href="https://s.panlay.com/WQX3mP" target="_blank" rel="noopener">10000+首钢琴电子琴谱合集｜五线谱PDF</a></li>
+        <li><a href="https://s.panlay.com/xrUvEJ" target="_blank" rel="noopener">幼儿涂色填色卡简笔画4000套</a></li>
+        <li><a href="https://s.panlay.com/H4g3Hs" target="_blank" rel="noopener">中国石窟全书17卷+赠送1本PDF电子版素材</a></li>
+        <li><a href="https://s.panlay.com/0Z3vd5" target="_blank" rel="noopener">中国传统色敦煌里的色彩美学</a></li>
+        <li><a href="https://s.panlay.com/EyuEPq" target="_blank" rel="noopener">王的猜想 A4纯净打印版</a></li>
+        <li><a href="https://s.panlay.com/YRHLYN" target="_blank" rel="noopener">干锅系列教程</a></li>
+        <li><a href="https://s.panlay.com/T3U0UX" target="_blank" rel="noopener">游戏PPT合集</a></li>
+        <li><a href="https://s.panlay.com/uths48" target="_blank" rel="noopener">87套课堂闯关互动PPT</a></li>
+        <li><a href="https://s.panlay.com/nmyOJ1" target="_blank" rel="noopener">大学新生入学必备资料大全</a></li>
+        <li><a href="https://s.panlay.com/o3DHDV" target="_blank" rel="noopener">PPT模板+配套发言稿</a></li>
+        <li><a href="https://s.panlay.com/h2yHN2" target="_blank" rel="noopener">1000套个人求职简历模板</a></li>
+        <li><a href="https://s.panlay.com/0DcHS8" target="_blank" rel="noopener">行业标准合集，4700+份标准电子版PDF</a></li>
+        <li><a href="https://s.panlay.com/LDlfxo" target="_blank" rel="noopener">教学能力报告PPT模板</a></li>
+        <li><a href="https://s.panlay.com/EGT4ai" target="_blank" rel="noopener">初中家长会 PPT 合集 216 套</a></li>
+        <li><a href="https://s.panlay.com/ptQ0WU" target="_blank" rel="noopener">255套教师PPT通用模板合集</a></li>
+        <li><a href="https://s.panlay.com/qwH3aB" target="_blank" rel="noopener">幼儿识字启蒙找字涂色全套100页电子版PDF</a></li>
+        <li><a href="https://s.panlay.com/SdHV12" target="_blank" rel="noopener">描红字帖练字电子版</a></li>
+        <li><a href="https://s.panlay.com/Zod45w" target="_blank" rel="noopener">26字母趣味英文教学课件</a></li>
+        <li><a href="https://s.panlay.com/BCDAm0" target="_blank" rel="noopener">设计素材全套拼豆图纸</a></li>
+        <li><a href="https://s.panlay.com/dOE8Yj" target="_blank" rel="noopener">7000+求职简历模板</a></li>
+        <li><a href="https://s.panlay.com/meE1tY" target="_blank" rel="noopener">2003-2025意林电子版</a></li>
+        <li><a href="https://s.panlay.com/23G0Hz" target="_blank" rel="noopener">1987-2026考研数学真题数学一数学二数学三+解析+复习</a></li>
+        <li><a href="https://s.panlay.com/MbfhEM" target="_blank" rel="noopener">道德与法治1-6年级电子版</a></li>
+        <li><a href="https://s.panlay.com/ujGXiu" target="_blank" rel="noopener">三联生活周刊2007-2005PDF版</a></li>
+        <li><a href="https://s.panlay.com/pFoPii" target="_blank" rel="noopener">12 套抽奖 excel 模板</a></li>
+        <li><a href="https://s.panlay.com/KYt2ab" target="_blank" rel="noopener">剪映140套口播模板合集</a></li>
+        <li><a href="https://s.panlay.com/rbxFNR" target="_blank" rel="noopener">1-12岁英语启蒙儿歌合集</a></li>
+        <li><a href="https://s.panlay.com/Ti5tCI" target="_blank" rel="noopener">股票相关书籍（590本+）</a></li>
+        <li><a href="https://s.panlay.com/Ti5tCI" target="_blank" rel="noopener">股票&amp;书籍 590本PDF电子版合集</a></li>
+        <li><a href="https://s.panlay.com/E0LRYa" target="_blank" rel="noopener">思考的维度：改变人生的11种思维方式 电子版</a></li>
+        <li><a href="https://s.panlay.com/3NSAw7" target="_blank" rel="noopener">算法相关书籍PDF合集，360本+高清电子版资料</a></li>
+        <li><a href="https://s.panlay.com/HtfSkV" target="_blank" rel="noopener">半导体专业书籍PDF合集，1150本</a></li>
+        <li><a href="https://s.panlay.com/TZ5VHI" target="_blank" rel="noopener">这本书的震撼，在于它把“专注”这件事讲得异常现实。</a></li>
+        <li><a href="https://s.panlay.com/LoIOmO" target="_blank" rel="noopener">秋招信息汇总表27 校招秋招汇总表央guo企私企外企</a></li>
+        <li><a href="https://s.panlay.com/ZoryJg" target="_blank" rel="noopener">学霸提优大试卷电子 1-6年级语文数学英语一二三四五六</a></li>
+        <li><a href="https://s.panlay.com/VmyUQV" target="_blank" rel="noopener">自然拼读 国际音标资料电子版</a></li>
+        <li><a href="https://s.panlay.com/m47olH" target="_blank" rel="noopener">花火杂志PDF高清电子版合集，2009-2022年</a></li>
+        <li><a href="https://s.panlay.com/oBTBUJ" target="_blank" rel="noopener">全国196个城市的旅游攻略PDF电子版</a></li>
+        <li><a href="https://s.panlay.com/yQd5vE" target="_blank" rel="noopener">婚礼筹备实用清单</a></li>
+      </ul>
+    </section>
+
+  <footer>共 25 个分类 · 213 条资源</footer>
+
+</div>
+
+<script>
+(function () {
+  var q = document.getElementById('q');
+  var c = document.getElementById('c');
+  var secs = [].slice.call(document.querySelectorAll('section'));
+  var data = secs.map(function (s) {
+    return {
+      el: s,
+      items: [].slice.call(s.querySelectorAll('li')),
+      total: s.querySelectorAll('li').length
+    };
+  });
+  var total = 213;
+  var timer;
+
+  function run() {
+    var kw = q.value.trim().toLowerCase();
+    document.body.classList.toggle('filtering', !!kw);
+    if (!kw) {
+      data.forEach(function (d) {
+        d.el.classList.remove('hit');
+        d.items.forEach(function (li) { li.style.display = ''; });
+      });
+      document.body.classList.remove('none');
+      c.textContent = total + ' 条';
+      return;
+    }
+    var n = 0;
+    data.forEach(function (d) {
+      var hit = 0;
+      d.items.forEach(function (li) {
+        var ok = li.textContent.toLowerCase().indexOf(kw) > -1;
+        li.style.display = ok ? '' : 'none';
+        if (ok) hit++;
+      });
+      d.el.classList.toggle('hit', hit > 0);
+      n += hit;
+    });
+    document.body.classList.toggle('none', n === 0);
+    c.textContent = n + ' / ' + total + ' 条';
+  }
+
+  q.addEventListener('input', function () {
+    clearTimeout(timer);
+    timer = setTimeout(run, 80);
+  });
+  q.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { q.value = ''; run(); q.blur(); }
+  });
+})();
+</script>
+</body>
+</html>
